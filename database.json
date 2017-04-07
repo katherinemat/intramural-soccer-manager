@@ -1,0 +1,38 @@
+{ "players": [
+  {
+    "name": "Kyle",
+    "position": "Midfield",
+    "age": 27,
+    "phone": "123-456-7890"
+  },
+  {
+    "name": "Adam",
+    "position": "Goal Keeper",
+    "age": 42,
+    "phone": "098-765-4321"
+  },
+  {
+    "name": "Robin",
+    "position": "Forward",
+    "age": 30,
+    "phone": "555-555-5555"
+  },
+  {
+    "name": "Amanda",
+    "position": "Defense",
+    "age": 31,
+    "phone": "434-434-4345"
+  },
+  {
+    "name": "Tim",
+    "position": "Midfield",
+    "age": 24,
+    "phone": "111-222-3333"
+  },
+  {
+    "name": "Dylan",
+    "position": "Defense",
+    "age": 25,
+    "phone": "786-324-9837"
+  }
+]}

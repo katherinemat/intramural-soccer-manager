@@ -20,4 +20,8 @@ export class TeamComponent implements OnInit {
     this.players = this.playerService.getPlayers();
   }
 
+  goToDetailPage(clickedPlayer) {
+    this.router.navigate(['player', clickedPlayer.$key]);
+  };
+
 }

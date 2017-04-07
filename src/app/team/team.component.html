@@ -2,7 +2,7 @@
 
 <div *ngFor="let player of players | async" class="panel panel-default">
   <div class="panel-body">
-    <h3>{{player.name}}, {{player.age}}</h3>
+    <h3 class="clickable" (click)="goToDetailPage(player)">{{player.name}}, {{player.age}}</h3>
     <h4>{{player.position}}</h4>
     <p>Phone: {{player.phone}}</p>
   </div>

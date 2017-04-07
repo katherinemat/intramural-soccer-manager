@@ -3,36 +3,42 @@
     "name": "Kyle",
     "position": "Midfield",
     "age": 27,
-    "phone": "123-456-7890"
+    "phone": "123-456-7890",
+    "notes": "great player. really fast and good at catching breakaways. Has a car, so is available to drive other players to games. Can't commit to games on sundays or anything laters than 10pm."
   },
   {
     "name": "Adam",
     "position": "Goal Keeper",
     "age": 42,
-    "phone": "098-765-4321"
+    "phone": "098-765-4321",
+    "notes": "tempermental, so be careful that he doesn't get into it with the ref. Likes to throw the ball far down the field when he gets possession of the ball. Has a car, so is available to drive other players to games. Works with leann and they sometimes drive together."
   },
   {
     "name": "Robin",
     "position": "Forward",
     "age": 30,
-    "phone": "555-555-5555"
+    "phone": "555-555-5555",
+    "notes": "new mom and very tough. been with team for longest amount of time. Has a car, so is available to drive other players to games. Can't commit to games on sundays or anything laters than 10pm."
   },
   {
     "name": "Amanda",
     "position": "Defense",
     "age": 31,
-    "phone": "434-434-4345"
+    "phone": "434-434-4345",
+    "notes": "great player with a killer shot. Good at substituting at good intervals. Likes to evaluate positioning of other players."
   },
   {
     "name": "Tim",
     "position": "Midfield",
     "age": 24,
-    "phone": "111-222-3333"
+    "phone": "111-222-3333",
+    "notes": "super quiet. can need some reassurance to take the shot because he'll often dribble in front of the goal for a couple seconds instead of shooting."
   },
   {
     "name": "Dylan",
     "position": "Defense",
     "age": 25,
-    "phone": "786-324-9837"
+    "phone": "786-324-9837",
+    "notes": "Needs a ride to games. already carpools with other players or gets a ride with Uber. plays on another team also. best talent on team. if he goes up to shoot and then the other team gets the ball, he hustles to get back."
   }
 ]}

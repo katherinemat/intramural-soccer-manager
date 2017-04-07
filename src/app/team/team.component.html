@@ -12,8 +12,6 @@
 
 <div *ngFor="let player of players | async | position:filterByPosition" class="panel panel-default">
   <div class="panel-body">
-    <h3 class="clickable" (click)="goToDetailPage(player)">{{player.name}}, {{player.age}}</h3>
-    <h4>{{player.position}}</h4>
-    <p>Phone: {{player.phone}}</p>
+    <h3 class="clickable" (click)="goToDetailPage(player)">{{player.name}}, {{player.position}}</h3>
   </div>
 </div>

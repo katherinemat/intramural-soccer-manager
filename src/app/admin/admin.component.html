@@ -1,3 +1,35 @@
-<p>
-  admin works!
-</p>
+<h3>Add New Player</h3>
+<div>
+  <div>
+    <label>Name:</label>
+    <br>
+    <input #newName>
+  </div>
+
+  <div>
+    <label>Position:</label>
+    <br>
+    <input #newPosition>
+  </div>
+
+  <div>
+    <label>Age:</label>
+    <br>
+    <input #newAge>
+  </div>
+
+  <div>
+    <label>Phone:</label>
+    <br>
+    <input #newPhone>
+  </div>
+
+  <div>
+    <label>Notes:</label>
+    <br>
+    <textarea #newNotes></textarea>
+  </div>
+
+  <button (click)="submitForm(newName.value, newPosition.value, newAge.value, newPhone.value, newNotes.value)">Add</button>
+
+</div>

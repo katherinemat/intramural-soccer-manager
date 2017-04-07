@@ -1,33 +1,33 @@
 <h3>Edit Player</h3>
 <div>
-  <div>
+  <div class="form-group">
     <label>Name:</label>
     <br>
-    <input [(ngModel)]="selectedPlayer.name">
+    <input class="form-control" [(ngModel)]="selectedPlayer.name">
   </div>
 
-  <div>
+  <div class="form-group">
     <label>Position:</label>
     <br>
-    <input [(ngModel)]="selectedPlayer.position">
+    <input class="form-control" [(ngModel)]="selectedPlayer.position">
   </div>
 
-  <div>
+  <div class="form-group">
     <label>Age:</label>
     <br>
-    <textarea [(ngModel)]="selectedPlayer.age"></textarea>
+    <input class="form-control" [(ngModel)]="selectedPlayer.age">
   </div>
 
-  <div>
+  <div class="form-group">
     <label>Phone:</label>
     <br>
-    <input [(ngModel)]="selectedPlayer.phone">
+    <input class="form-control" [(ngModel)]="selectedPlayer.phone">
   </div>
 
-  <div>
+  <div class="form-group">
     <label>Notes:</label>
     <br>
-    <input [(ngModel)]="selectedPlayer.notes">
+    <textarea class="form-control" [(ngModel)]="selectedPlayer.notes"></textarea>
   </div>
 
   <button (click)="beginUpdatingPlayer(selectedPlayer)">Update</button>

@@ -3,3 +3,29 @@
   cursor: pointer;
   font-weight: bold;
 }
+
+.all-players {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.one-player {
+  width: 400px;
+  margin: 10px;
+}
+
+.home-page-picture {
+  height: 200px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: green;
+}
+
+#ball {
+  position: absolute;
+  left: 75%;
+  top: 20%;
+  height: 100px;
+}

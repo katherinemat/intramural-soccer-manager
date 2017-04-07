@@ -1,33 +1,33 @@
 <h3>Add New Player</h3>
 <div>
-  <div>
+  <div class="form-group">
     <label>Name:</label>
     <br>
-    <input #newName>
+    <input class="form-control" #newName>
   </div>
 
-  <div>
+  <div class="form-group">
     <label>Position:</label>
     <br>
-    <input #newPosition>
+    <input class="form-control" #newPosition>
   </div>
 
-  <div>
+  <div class="form-group">
     <label>Age:</label>
     <br>
-    <input #newAge>
+    <input class="form-control" #newAge>
   </div>
 
-  <div>
+  <div class="form-group">
     <label>Phone:</label>
     <br>
-    <input #newPhone>
+    <input class="form-control" #newPhone>
   </div>
 
-  <div>
+  <div class="form-group">
     <label>Notes:</label>
     <br>
-    <textarea #newNotes></textarea>
+    <textarea class="form-control" #newNotes></textarea>
   </div>
 
   <button (click)="submitForm(newName.value, newPosition.value, newAge.value, newPhone.value, newNotes.value)">Add</button>

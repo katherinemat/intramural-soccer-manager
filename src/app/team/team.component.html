@@ -1,5 +1,7 @@
 <h1>Team</h1>
+<hr>
 
+<h4>Filter players</h4>
 <div class="filter-form" *ngIf="currentRoute !== '/admin'">
   <select (change)="onChange($event.target.value)">
     <option value="allPlayers" selected="selected">All Players</option>
@@ -10,14 +12,20 @@
   </select>
 </div>
 
-<div *ngFor="let player of players | async | position:filterByPosition" class="panel panel-default">
-  <div class="panel-body">
-    <h3 class="clickable" (click)="goToDetailPage(player)">{{player.name}}, {{player.position}}</h3>
-    <div *ngIf="currentRoute === '/admin'">
-      <p>{{player.age}} years old.</p>
-      <p>Notes: {{player.notes}}</p>
-      <p>Phone: {{player.phone}}</p>
-      <app-edit-player [selectedPlayer]='player'></app-edit-player>
+<div class="all-players">
+  <div *ngFor="let player of players | async | position:filterByPosition">
+    <div class="one-player">
+      <h3 class="clickable" (click)="goToDetailPage(player)">{{player.name}}, {{player.position}}</h3>
+      <div *ngIf="currentRoute === '/admin'">
+        <p>{{player.age}} years old.</p>
+        <p>Notes: {{player.notes}}</p>
+        <p>Phone: {{player.phone}}</p>
+        <app-edit-player [selectedPlayer]='player'></app-edit-player>
+      </div>
     </div>
   </div>
+</div>
+
+<div class="home-page-picture" *ngIf="currentRoute !== '/admin'">
+  <img id="ball" src="../assets/images/ball.png" alt="soccer ball">
 </div>

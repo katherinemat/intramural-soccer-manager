@@ -13,11 +13,16 @@ import { Player } from '../player.model';
 export class TeamComponent implements OnInit {
 
   players: FirebaseListObservable<any[]>;
+  filterByPosition: string = "allPlayers";
 
   constructor(private router: Router, private playerService: PlayerService) { }
 
   ngOnInit() {
     this.players = this.playerService.getPlayers();
+  }
+
+  onChange(optionFromMenu) {
+    this.filterByPosition = optionFromMenu;
   }
 
   goToDetailPage(clickedPlayer) {

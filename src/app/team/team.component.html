@@ -1,6 +1,16 @@
 <h1>Team</h1>
 
-<div *ngFor="let player of players | async" class="panel panel-default">
+<div class="filter-form">
+  <select (change)="onChange($event.target.value)">
+    <option value="allPlayers" selected="selected">All Players</option>
+    <option value="goalie">Goal Keepers</option>
+    <option value="defense">Defenders</option>
+    <option value="mid">Midfielders</option>
+    <option value="forward">Forwards</option>
+  </select>
+</div>
+
+<div *ngFor="let player of players | async | position:filterByPosition" class="panel panel-default">
   <div class="panel-body">
     <h3 class="clickable" (click)="goToDetailPage(player)">{{player.name}}, {{player.age}}</h3>
     <h4>{{player.position}}</h4>

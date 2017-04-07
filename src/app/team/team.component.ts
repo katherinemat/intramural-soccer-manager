@@ -14,6 +14,7 @@ export class TeamComponent implements OnInit {
 
   players: FirebaseListObservable<any[]>;
   filterByPosition: string = "allPlayers";
+  currentRoute: string = this.router.url;
 
   constructor(private router: Router, private playerService: PlayerService) { }
 

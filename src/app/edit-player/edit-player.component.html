@@ -1,0 +1,35 @@
+<h3>Edit Player</h3>
+<div>
+  <div>
+    <label>Name:</label>
+    <br>
+    <input [(ngModel)]="selectedPlayer.name">
+  </div>
+
+  <div>
+    <label>Position:</label>
+    <br>
+    <input [(ngModel)]="selectedPlayer.position">
+  </div>
+
+  <div>
+    <label>Age:</label>
+    <br>
+    <textarea [(ngModel)]="selectedPlayer.age"></textarea>
+  </div>
+
+  <div>
+    <label>Phone:</label>
+    <br>
+    <input [(ngModel)]="selectedPlayer.phone">
+  </div>
+
+  <div>
+    <label>Notes:</label>
+    <br>
+    <input [(ngModel)]="selectedPlayer.notes">
+  </div>
+
+  <button (click)="beginUpdatingPlayer(selectedPlayer)">Update</button>
+  <br>
+  <button (click)="beginDeletingPlayer(selectedPlayer)">Delete</button>
